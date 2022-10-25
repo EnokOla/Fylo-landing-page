@@ -1,0 +1,261 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* navigation-bar stylings */
+nav {
+    width: 90%;
+    margin: 2rem auto 5rem;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    float: right;
+    list-style: none;
+    padding: 0.3rem 1.5rem;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+
+/* first container stylings */
+.general-container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.txt-container {
+    width: 48%;
+    font-size: 21px;
+}
+
+.img-container {
+    width: 48%;
+}
+.footer{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    width: 100%;
+}
+/* second container stylings */
+.snd-container{
+    background-color:hsl(240, 75%, 98%);
+}
+
+/* third container stylings */
+.trd-container{
+    background-color: hsl(238, 22%, 44%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.diff-container{
+    color: hsl(0, 0%, 75%);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.closing-text{
+    width: 40%;
+    color: white;
+}
+.closing-form{
+    width: 30%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+/* fourt container stylings */
+.frt-container{
+    background-color: hsl(243, 87%, 12%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+ ul li{
+    color: hsl(0, 0%, 75%);
+    list-style: none;
+}
+
+/* images stylings */
+.image {
+    width: 100%;
+    vertical-align: bottom;
+}
+.desktop-img{
+    display: block;
+    width: 100%;
+}
+.mobile-img{
+    display: none;
+}
+.avatar{
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/* font stylings */
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.header {
+    color: hsl(243, 87%, 12%);
+}
+
+.content {
+    color: hsl(238, 22%, 44%);
+}
+
+/* button stylings */
+button{
+    width: 28%;
+    padding: 9px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+}
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+.snd-button{
+    width: 50%;
+}
+/* form stylings */
+#form{
+    width: 50%;
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid hsl(238, 22%, 44%);
+}
+::placeholder{
+    color: hsl(0, 0%, 75%);
+}
+#snd-form{
+    width: 100%;
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid hsl(238, 22%, 44%);
+}
+
+/* link stylings */
+.info{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+
+/* testimonial styling */
+.testimonials{
+    width: 60%;
+    margin:3rem 0 ;
+    box-shadow: 2px 2px 4px 4px hsla(0, 0%, 75%, 0.137);
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: smaller;
+}
+.testi{
+    display: flex;
+    flex-direction: row;
+}
+.monials{
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+
+
+
+@media(max-width:600px){
+    .general-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .txt-container{
+        width: 100%;
+        order: 2;
+        margin: 2rem auto;
+    }
+    .header{
+        margin-bottom: 2rem;
+    }
+    .content{
+        margin-bottom: 2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    button{
+        width: 100%;
+        padding: 13px;
+    }
+    #form{
+        width: 95%;
+        height: 16px;
+    }
+    
+    .img-container{
+        width: 100%;
+        order: 1;
+    }
+    .testimonials{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .trd-container{
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem ;
+    }
+    .diff-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .closing-text{
+        width: 100%;
+    }
+    .closing-form{
+        width: 70%;
+        margin: auto;
+    }
+    .snd-button{
+        width: 100%;
+    }
+    #snd-form{
+        width: 94%;
+    }
+    .frt-container{
+        font-size: large;
+        padding-top: 3rem;
+        padding-bottom: 3rem ;
+    }
+}
